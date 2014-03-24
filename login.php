@@ -31,8 +31,4 @@
 	</form>
 </div>
 
-<div id="login-cancel">
-	<span class="cancel-text">Etkö haluakaan kirjautua?</span> <button>Peruuta kirjautuminen</button>
-</div>
-
 <?php foot(); ?>
