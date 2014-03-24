@@ -8,6 +8,7 @@ function head($title = 'PartioID') {
 		<meta charset="utf-8">
 		<title><?php print $title; ?></title>
 		<link rel="stylesheet" href="style.css" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<div id="portalbar"></div>
