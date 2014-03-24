@@ -1,0 +1,360 @@
+
+
+body {
+	font-family: verdana, arial, sans-serif;
+	background: #BBB;
+	padding: 0;
+	margin: 0;
+}
+
+#portalbar {
+	background: #333;
+	height: 3em;
+}
+
+#lang {
+	margin: 0 auto;
+	font-size: 12px;
+	margin-top: 12px;
+	width: 970px;
+	max-width: 90%;
+	text-align: right;
+}
+
+#nav {
+	background: 50% 50% no-repeat url(gfx/nav.png);
+	background-size: contain;
+	width: 1256px;
+	max-width: 100%;
+	margin: 12px auto 2em;
+	font-size: 18px;
+}
+
+#nav #inner {
+	height: 65px;
+	line-height: 60px;
+	width: 970px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+#nav #inner .item {
+	display: inline-block;
+	margin-right: 1.2em;
+	position: relative;
+}
+
+#main {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 970px;
+	padding: 20px;
+	margin: 0 auto;
+	border: 1px solid #AAA;
+	border-radius: 7px;
+	font-size: 14px;
+	max-width: 90%;
+	background: #FFF;
+	overflow: auto;
+}
+
+#footer {
+	text-align: center;
+	font-size: 12px;
+	margin: 20px 10px 40px;
+	line-height: 20px;
+}
+
+h1, h2 {
+	font-weight: normal;
+}
+
+button {
+	font-size: 14px;
+	color: white;
+	background: black;
+	border: 0;
+	padding: 7px 10px;
+	margin: 0 0 5px;
+}
+
+button.secondary {
+	background: #AAA;
+	color: #000;
+}
+
+#login-right, #login-left {
+	width: 42.8%;
+	float: left;
+	padding: 3%;
+}
+
+#login-right h1, #login-left, #login-cancel {
+	text-align: center;
+}
+
+#login-right h1, #login-left h1 {
+	font-size: 22px;
+	margin-bottom: 1em;
+}
+
+#login-right {
+	border-left: 1px solid #AAA;
+}
+
+#login-cancel {
+	clear: both;
+	padding: 40px 0 20px;
+}
+
+.ext-svc {
+	background: #888;
+	color: #FFF;
+	width: 90%;
+	padding: 0.7em 0;
+	display: inline-block;
+	margin: 6px 0 13px;
+	text-align: center;
+}
+
+.cancel-text {
+	margin-right: 1em;
+}
+
+#login-right label {
+	display: block;
+	font-weight: bold;
+}
+
+#login-right label input {
+	display: block;
+	margin: 5px 0 15px;
+	width: 100%;
+	padding: 3px 0;
+}
+
+#login-right form {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#login-right .form-help {
+	font-size: 11px;
+	margin: -13px 0 17px;
+}
+
+.or-register {
+	margin-left: 5px;
+}
+
+.regform {
+	padding: 1em 0 0;
+}
+
+.regform label, .passwdform label {
+	display: inline-block;
+	width: 9em;
+}
+
+.passwdform label {
+	width: 11em;
+}
+
+form .row {
+	margin-bottom: 15px;
+}
+/*
+.regform .forgotten {
+	margin: 0 0 0 9.3em;
+}
+
+.passwdform .restore {
+	margin: 0 0 0 11.3em;
+}
+*/
+.cbc {
+	margin: 0 0 15px;
+}
+
+#phases {
+	padding: 10px 0 10px;
+}
+
+.phase {
+	display: inline-block;
+	margin: 0 7px 5px;
+}
+
+.phase .num {
+	display: inline-block;
+	background: #CCC;
+	text-align: center;
+	border-radius: 100%;
+	font-weight: bold;
+	font-size: 15px;
+	height: 30px;
+	width: 30px;
+	line-height: 28px;
+}
+
+.phase-1.active-1,
+.phase-2.active-2,
+.phase-3.active-3,
+.phase-4.active-4
+{
+	font-weight: bold;
+}
+
+.phase-1.active-1 .num,
+.phase-2.active-2 .num,
+.phase-3.active-3 .num,
+.phase-4.active-4 .num
+ {
+	background: black;
+	color: white;
+}
+
+.check {
+	display: inline-block;
+	width: 8.5em;
+	margin-bottom: 0.5em;
+}
+
+#choose-service div {
+	margin-right: 1em;
+	display: inline-block;
+	width: auto;
+	padding: 10px 10px 10px 40px;
+}
+
+.form-help-pw {
+	display: inline-block;
+	padding-left: 0.5em;
+}
+
+#memberid {
+	margin-right: 12.5em;
+}
+
+@media screen and (max-width: 1100px) {
+	#nav {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 630px) {
+
+	.form-help-pw {
+		padding-left: 0;
+	}
+
+	#lang {
+		text-align: center;
+	}
+
+	#nav {
+		background: #AAA;
+		overflow: auto;
+	}
+
+	#nav #inner {
+		height: auto;
+		line-height: 2em;
+		max-width: 100%;
+	}
+
+	#nav #inner .item {
+		width: 33%;
+		margin: 0;
+		text-align: center;
+		float: left;
+	}
+
+	#phases {
+		text-align: left;
+		padding: 0;
+	}
+
+	.phase .num {
+		display: inline-block;
+	}
+
+	.phase {
+		margin: 0 0 5px 0;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	#nav #inner .item {
+		width: auto;
+		margin-left: 20px;
+	}
+
+	#nav #inner {
+		text-align: center;
+	}
+
+	.regform input {
+		width: 100%;
+	}
+
+	.regform input#memberid {
+		width: 90%;
+	}
+
+	.regform .forgotten, .regform .continue {
+		margin-left: 0;
+	}
+
+	#choose-service div {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#main {
+		width: auto;
+		max-width: auto;
+		border: 0;
+		margin: 0 auto;
+	}
+}
+
+
+@media screen and (max-width: 630px) {
+
+	body {
+		background: #FFF;
+	}
+
+	#main {
+		max-width: 100%;
+		border: 0;
+		padding-top: 0;
+	}
+
+	#login-left, #login-right {
+		float: none;
+		padding: 0;
+		width: 100%;
+		border: 0;
+	}
+
+	#login-cancel {
+		border-top: 1px solid #AAA;
+		margin-top: 20px;
+	}
+
+	#login-cancel span {
+		display: block;
+		margin: 0 0 1em;
+	}
+}
+
+.error {
+	padding: 10px;
+	background: #BBB;
+	margin-bottom: 20px;
+}

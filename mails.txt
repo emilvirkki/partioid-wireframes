@@ -1,0 +1,46 @@
+Lähettäjä: PartioID (noreply@id.partio.fi)
+Otsikko: Aseta uusi PartioID-salasana ja käyttäjätunnus
+
+Olet pyytänyt PartioID-salasanasi ja käyttäjätunnuksesi palautusta. Nykyinen käyttäjätunnuksesi on [käyttäjätunnus].
+
+Voit asettaa uuden salasanan ja halutessasi vaihtaa käyttäjätunnuksesi klikkaamalla allaolevaa linkkiä:
+[linkki]
+
+Jos et pyytänyt salasanan palautusta tai et haluakaan vaihtaa salasanaasi, voit jättää tämä viestin huomiotta - tällöin salasanasi
+ja käyttäjätunnuksesi pysyvät ennallaan.
+
+Terveisin,
+PartioID-ylläpito
+
+------
+
+Lähettäjä: PartioID (noreply@id.partio.fi)
+Otsikko: Aseta PartioID-salasana ja käyttäjätunnus
+
+Olet pyytänyt PartioID-salasanasi ja käyttäjätunnuksesi palautusta. Olet aiemmin käyttänyt kirjautumisessa [Google/Facebook]-tiliäsi [tili].
+
+Voit asettaa salasanan ja käyttäjätunnuksen klikkaamalla allaolevaa linkkiä:
+[linkki]
+
+Asetettuasi salasanan ja käyttäjätunnuksen et voi enää kirjautua [Google/Facebook]-tililläsi.
+
+Jos et pyytänyt salasanan palautusta tai et haluakaan muuttaa kirjautumistapaasi, voit jättää tämä viestin huomiotta - tällöin
+[Google/Facebook]-tilisi toimii kirjautumisessa jatkossakin.
+
+Terveisin,
+PartioID-ylläpito
+
+------
+
+Lähettäjä: PartioID (noreply@id.partio.fi)
+Otsikko: Vahvista sähköpostiosoitteesi
+
+Olet luomassa uutta PartioID-käyttäjätiliä sähköpostilla [sähköpostiosoite]. Vahvista olevasi sähköpostiosoitteen omistaja
+klikkaamalla allaolvaa linkkiä:
+[linkki]
+
+Jos et ollut luomassa tiliä, joku on vahingossa merkinnyt sähköpostiosoitteesi tietoihinsa Suomen Partiolaisten
+jäsenrekisterissä. Ota yhtettä Suomen Partiolaisten jäsenrekisterinhoitajaan, jasenrekisteri@partio.fi.
+
+Terveisin,
+PartioID-ylläpito

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<h1>PartioID-rautalangat</h1>
+<p>Kaikki rautalangat on tehty responsiivisiksi. Testattu vain ja ainoastaan Firefoxissa.</p>
+<h2>Kirjautuminen</h2>
+<ul>
+<li><a href="login.php">Etusivu</a></li>
+<li><a href="goto.php">On kirjauduttu jo kerran, jatka palveluun</a></li>
+<li><a href="login.php?state=failed">Virhe: väärä käyttäjätunnus/salasana</a></li>
+<li><a href="extsvc_failure.php">Virhe: Kirjautuminen ulkoisella palvelulla epäonnistui, tiliin ei ole liitetty PartioID:tä</a></li>
+</ul>
+
+<h2>Rekisteröityminen</h2>
+<ul>
+<li><a href="register.php?phase=1">Vaihe 1: Jäsentiedot</a></li>
+<li><a href="register.php?phase=2">Vaihe 2: Sähköpostiosoitteen vahvistaminen</a></li>
+<li><a href="register.php?phase=3">Vaihe 3: Kirjautumistavan valinta</a></li>
+<li><a href="register.php?phase=3&amp;pw=yes">Vaihe 3: Sähköpostin ja salasanan asettaminen</a></li>
+<li><a href="register.php?phase=3&amp;ext=yes">Vaihe 3: Google-tilin vahvistaminen</a></li>
+<li><a href="register.php?phase=4">Vaihe 4: Jatka palveluun (Google-tunnus)</a></li>
+<li><a href="register.php?phase=4&amp;pw=yes">Vaihe 4: Jatka palveluun (Salasana)</a></li>
+</ul>
+
+<h2>Salasanan palautus</h2>
+<ul>
+<li><a href="forgot_password.php">Salasanan palautus</a></li>
+<li><a href="forgot_password.php?state=noaccount">Virhe: käyttäjä ei ole rekisteröitynyt</a></li>
+<li><a href="forgot_password.php?state=wrongmail">Virhe: Jäsennumero ja email eivät matchaa</a></li>
+<li><a href="forgot_password.php?state=exists_ext">Virhe: Aiemmin käytetty Googlea</a></li>
+<li><a href="restore_mail_sent.php">Sähköposti lähetetty</a></li>
+<li><a href="restore_password.php">Salasanan palautus</a></li>
+<li><a href="restore_password.php?state=account_exists">Virhe: käyttäjätunnus on jo käytössä</a></li>
+<li><a href="restore_password.php?state=done_pass">Salasana vaihdettu</a></li>
+<li><a href="restore_password.php?state=done_both">Salasana ja käyttäjätunnus vaihdettu</a></li>
+
+</ul>
+
+<h2>Järjestelmän lähettämät sähköpostit</h2>
+<ul>
+<li><a href="mails.txt">Sähköpostit</a></li>
+</ul>
+
+</body>
+</html>
