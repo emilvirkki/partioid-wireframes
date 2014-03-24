@@ -26,9 +26,13 @@
 		</label>
 		<div class="form-help"><a href="forgot_password.php">Unohditko salasanasi tai käyttäjätunnuksesi?</a></div>
 		<div id="login-btn">
-		<button>Kirjaudu</button><span class="or-register"> tai <a href="register.php">rekisteröidy</a></span>
+		<button>Kirjaudu</button>
 		</div>
 	</form>
+</div>
+
+<div id="login-cancel">
+	<span class="cancel-text">Eikö sinulla vielä ole PartioID:tä?</span> <button>Rekisteröidy</button>
 </div>
 
 <?php foot(); ?>
