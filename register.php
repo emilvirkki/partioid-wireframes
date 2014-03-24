@@ -33,14 +33,14 @@
 		<p>Käytät kirjautumisessa jatkossa Google-tiliäsi <strong>example@gmail.com</strong>.<br><br></p>
 		<a href="?phase=2" class="button">Jatka</a> <a href="login.php" class="button secondary">Peruuta</a>
 
-		<p><br>Jos haluat kirjautua Facebook-tililläsi tai käyttäjätunnuksella ja salasanalla, <a href="#">vaihda kirjautumistapaa</a>.</p>
+		<p><br>Jos haluat kirjautua Facebook-tililläsi tai käyttäjätunnuksella ja salasanalla, <a href="?phase=3">vaihda kirjautumistapaa</a>.</p>
 	<?php else: ?>
 		<?php if($_GET['mail'] == 'confirmed'): ?>
 			<p>Sähköpostiosoitteesi on vahvistettu!</p>
 		<?php endif; ?>
 		<p>Kirjaudu PartioID:lläsi jatkossa käyttäen:</p>
 		<div id="choose-service">
-			<div id="google" class="ext-svc"><a href="?phase=3&amp;ext=yes">Google-tiliäsi</a></div>
+			<div id="google" class="ext-svc"><a href="extsvc.php">Google-tiliäsi</a></div>
 			<div id="fb" class="ext-svc">Facebook-tiliäsi</div>
 			<div id="password" class="ext-svc"><a href="?phase=3&amp;pw=yes">Käyttäjätunnusta ja salasanaa</a></div>
 		</div>
@@ -54,7 +54,7 @@
 		<br><a href="testipalvelu.php?loggedin=yes" class="button">Jatka palveluun Testipalvelu</a><br>
 	<?php else: ?>
 		<p>
-			Jäsenrekisteriin merkittyyn sähköpostiosoitteeseen on lähetetty linkki, jonka kautta sinun on vahvistettava sähköpostiosoitteesi. Jos et
+			Jäsenrekisteriin merkittyyn sähköpostiosoitteeseesi on lähetetty linkki, jonka kautta sinun on vahvistettava sähköpostiosoitteesi. Jos et
 			ole saanut linkkiä, tarkista roskapostikansiosi.
 		</p>
 	<?php endif; ?>

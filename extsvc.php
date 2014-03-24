@@ -1,0 +1,1 @@
+Tässä kohtaa mentäisiin Googleen, jossa antaisit luvan id.partio.fi:lle tarkastella sähköpostiosoitettasi. <a href="register.php?phase=3&amp;ext=yes">Jatka</a>.
