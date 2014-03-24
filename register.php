@@ -43,12 +43,6 @@
 		</div>
 	<?php endif; ?>
 <?php elseif($phase == 4): ?>
-	<?php if($_GET['pw'] == 'yes'): ?>
-		<p>Kirjaudut jatkossa PartioID-palvelussa käyttäjätunnuksen <strong>esimerkki</strong> ja antamasi
-		salasanan avulla.</p>
-	<?php else: ?>
-		<p>Kirjaudut jatkossa PartioID-palvelussa Google-tililläsi <strong>esimerkki@gmail.com</strong>.</p>
-	<?php endif; ?>
 		<p>Kiitos rekisteröitymisestäsi!</p>
 		<br><button>Jatka palveluun Purkki</button>
 <?php endif; ?>
