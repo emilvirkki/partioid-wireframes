@@ -42,7 +42,7 @@ function regform($buttons = '', $show_checkbox = FALSE) {
 <div class="row">
 <label for="memberid">Jäsennumero:</label>
 <input type="number" id="memberid" size="10">
-<div class="form-help-pw"><small>Kuusi numeroa, löydät tämän jäsenkortista tai jäsenmaksulaskusta</small></div>
+<div class="form-help-pw"><small>Löydät tämän jäsenkortista tai jäsenmaksulaskusta</small></div>
 </div>
 <div class="row">
 <label for="mail">Sähköpostiosoite:</label>
