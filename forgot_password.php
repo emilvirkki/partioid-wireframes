@@ -9,7 +9,7 @@ lippukuntasi jäsenrekisterinhoitajaan.
 </div>
 <?php elseif($_GET['state'] == 'noaccount'): ?>
 <div class="error">
-Et ole vielä <a href="#">rekisteröitynyt</a> PartioID-käyttäjäksi.
+Et ole vielä <a href="register.php?phase=1">rekisteröitynyt</a> PartioID-käyttäjäksi.
 
 Jos olet varma, että olet jo rekisteröitynyt, tarkista että olet kirjoittanut jäsennumerosi oikein.
 </div>
@@ -17,12 +17,12 @@ Jos olet varma, että olet jo rekisteröitynyt, tarkista että olet kirjoittanut
 <div class="error">
 Olet aiemmin käyttänyt kirjautumisessa Google-tiliäsi <strong>example@gmail.com</strong>, etkä käyttäjätunnusta ja salasanaa.
 
-<div id="google" class="ext-svc" style="width: 300px">Kirjaudu Google-tililläsi</div>
+<div id="google" class="ext-svc" style="width: 300px"><a href="testipalvelu.php?loggedin=yes">Kirjaudu Google-tililläsi</a></div>
 
 <p>Jos et halua enää käyttää kirjautumiseen Google-tiliäsi, voit luoda itsellesi käyttäjätunnuksen ja salasanan.
 Tällöin et voi enää käyttää Google-tiliäsi kirjautumisessa.
 </p>
-<p><button>Luo käyttäjätunnus ja salasana</button> <button class="secondary">Peruuta</button></p>
+<p><a href="restore_mail_sent.php" class="button">Luo käyttäjätunnus ja salasana</a> <a href="login.php" class="button secondary">Peruuta</a></p>
 </div>
 <?php endif; ?>
 
@@ -32,6 +32,6 @@ Tällöin et voi enää käyttää Google-tiliäsi kirjautumisessa.
 kautta voit asettaa uuden salasan ja halutessasi vaihtaa käyttäjätunnuksesi. Jos et muista jäsenrekisteriin merkittyä sähköpostiosoitettasi, ota yhteyttä
 lippukuntasi jäsenrekisterinhoitajaan.</p>
 
-<?php regform('<button class="forgotten">Lähetä</button>'); ?>
+<?php regform('<a href="restore_mail_sent.php" class="button">Lähetä</a>'); ?>
 
 <?php foot(); ?>

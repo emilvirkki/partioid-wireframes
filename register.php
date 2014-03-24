@@ -22,16 +22,16 @@
 	Jos et muista jäsenrekisteriin merkittyä sähköpostiosoitettasi tai et enää käytä sitä, ota yhteyttä lippukuntasi
 	jäsenrekisterinhoitajaan.
 	</p>
-	<?php regform('<button class="continue">Jatka</button> <button class="secondary">Peruuta</button>',TRUE); ?>
+	<?php regform('<br><a href="register.php?phase=3" class="button">Jatka</a> <a href="login.php" class="button secondary">Peruuta</a>',TRUE); ?>
 <?php elseif($phase == 3): ?>
 	<?php if($_GET['pw'] == 'yes'): ?>
 		<p>Valitse PartioID-kirjautumista varten käyttäjätunnus ja salasana.<br><br></p>
-		<?php passwdform('<br><button>Tallenna</button> <button class="secondary">Peruuta</button>'); ?>
+		<?php passwdform('<br><a href="?phase=2" class="button">Jatka</a> <a href="login.php" class="button secondary">Peruuta</a>'); ?>
 
-		<p><br>Jos haluat kirjautua Facebook- tai Google-tililläsi, <a href="#">vaihda kirjautumistapaa</a>.</p>
+		<p><br>Jos haluat kirjautua Facebook- tai Google-tililläsi, <a href="?phase=3">vaihda kirjautumistapaa</a>.</p>
 	<?php elseif($_GET['ext'] == 'yes'): ?>
 		<p>Käytät kirjautumisessa jatkossa Google-tiliäsi <strong>example@gmail.com</strong>.<br><br></p>
-		<button>Tallenna valinta</button> <button class="secondary">Peruuta</button>
+		<a href="?phase=2" class="button">Jatka</a> <a href="login.php" class="button secondary">Peruuta</a>
 
 		<p><br>Jos haluat kirjautua Facebook-tililläsi tai käyttäjätunnuksella ja salasanalla, <a href="#">vaihda kirjautumistapaa</a>.</p>
 	<?php else: ?>
@@ -40,18 +40,18 @@
 		<?php endif; ?>
 		<p>Kirjaudu PartioID:lläsi jatkossa käyttäen:</p>
 		<div id="choose-service">
-			<div id="google" class="ext-svc">Google-tiliäsi</div>
+			<div id="google" class="ext-svc"><a href="?phase=3&amp;ext=yes">Google-tiliäsi</a></div>
 			<div id="fb" class="ext-svc">Facebook-tiliäsi</div>
-			<div id="password" class="ext-svc">Käyttäjätunnusta ja salasanaa</div>
+			<div id="password" class="ext-svc"><a href="?phase=3&amp;pw=yes">Käyttäjätunnusta ja salasanaa</a></div>
 		</div>
 	<?php endif; ?>
 <?php elseif($phase == 2): ?>
 	<?php if($_GET['regok'] == 'now'): ?>
 		<p>Sähköpostiosoitteesi on nyt vahvistettu ja PartioID-tilisi luonti on valmis. Kiitos rekisteröitymisestäsi!</p>
-		<br><button>Jatka palveluun Purkki</button>
+		<br><a href="testipalvelu.php?loggedin=yes" class="button">Jatka palveluun Testipalvelu</a><br>
 	<?php elseif($_GET['regok'] == 'earlier'): ?>
 		<p>Olit jo vahvistanut sähköpostiosoitteesi jo aiemmin, joten PartioID-tilisi luonti on valmis. Kiitos rekisteröitymisestäsi!</p>
-		<br><button>Jatka palveluun Purkki</button>
+		<br><a href="testipalvelu.php?loggedin=yes" class="button">Jatka palveluun Testipalvelu</a><br>
 	<?php else: ?>
 		<p>
 			Jäsenrekisteriin merkittyyn sähköpostiosoitteeseen on lähetetty linkki, jonka kautta sinun on vahvistettava sähköpostiosoitteesi. Jos et

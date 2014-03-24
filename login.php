@@ -9,13 +9,14 @@
 
 <div id="login-left">
 	<h1>Kirjaudu sisään PartioID-tunnukseesi liitetyllä tilillä</h1>
-	<div id="facebook" class="ext-svc">Facebook-kirjautuminen</div>
-	<div id="google" class="ext-svc">Google-kirjautuminen</div>
+	<div id="facebook" class="ext-svc"><a href="testipalvelu.php?loggedin=yes">Facebook-kirjautuminen</a></div>
+	<div id="google" class="ext-svc"><a href="testipalvelu.php?loggedin=yes">Google-kirjautuminen</a></div>
 </div>
 
 <div id="login-right">
 	<h1>Kirjaudu PartioID-tunnuksesi käyttäjätunnuksella ja salasanalla</h1>
-	<form>
+	<form action="testipalvelu.php">
+		<input type="hidden" name="loggedin" value="yes">
 		<label>
 			Käyttäjätunnus:
 			<input type="text">
@@ -32,7 +33,7 @@
 </div>
 
 <div id="login-cancel">
-	<span class="cancel-text">Eikö sinulla vielä ole PartioID:tä?</span> <button>Rekisteröidy</button>
+	<span class="cancel-text">Eikö sinulla vielä ole PartioID:tä?</span> <a href="register.php?phase=1" class="button">Rekisteröidy</a>
 </div>
 
 <?php foot(); ?>

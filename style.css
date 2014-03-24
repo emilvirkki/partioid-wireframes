@@ -70,16 +70,19 @@ h1, h2 {
 	font-weight: normal;
 }
 
-button {
+button, .button {
 	font-size: 14px;
 	color: white;
 	background: black;
 	border: 0;
 	padding: 7px 10px;
 	margin: 0 0 5px;
+	display: inline-block;
+	text-decoration: none;
+	cursor: default;
 }
 
-button.secondary {
+button.secondary, .button.secondary {
 	background: #AAA;
 	color: #000;
 }
@@ -116,6 +119,11 @@ button.secondary {
 	display: inline-block;
 	margin: 6px 0 13px;
 	text-align: center;
+}
+
+.ext-svc a {
+	color: #FFF;
+	text-decoration: none;
 }
 
 .cancel-text {

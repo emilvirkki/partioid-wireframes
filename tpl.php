@@ -14,9 +14,9 @@ function head($title = 'PartioID') {
 		<div id="lang"><strong>Suomeksi</strong> | <a href="#">På Svenska</a> | <a href="#">In English</a></div>
 		<div id="nav">
 			<div id="inner">
-				<div class="item login">Kirjaudu</div>
-				<div class="item register">Rekisteröidy</div>
-				<div class="item about">Mikä on PartioID?</div>
+				<div class="item login"><a href="login.php">Kirjaudu</a></div>
+				<div class="item register"><a href="register.php?phase=1">Rekisteröidy</a></div>
+				<div class="item about"><a href="about.php">Mikä on PartioID?</a></div>
 			</div>
 		</div>
 
@@ -31,6 +31,12 @@ function foot() {
 			Copyright © 2013-2014 Suomen Partiolaiset - Finlands Scouter ry<br>
 			<a href="#">Käyttöehdot</a> | <a href="#">Rekisteriseloste</a>
 		</div>
+		<script src="jquery.js"></script>
+		<script>
+		$('button').on('click', function() {
+			
+		});
+		</script>
 	</body>
 </html>
 <?php
