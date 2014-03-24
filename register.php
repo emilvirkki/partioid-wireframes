@@ -18,6 +18,10 @@
 	löytyvää jäsennumeroa ja jäsenrekisterissä olevaa sähköpostiosoitetta.
 	Sähköpostiosoitetta käytetään mahdollisiin palvelua koskeviin yhteydenottoihin jatkossa.
 	</p>
+	<p>
+	Jos et muista jäsenrekisteriin merkittyä sähköpostiosoitettasi tai et enää käytä sitä, ota yhteyttä lippukuntasi
+	jäsenrekisterinhoitajaan.
+	</p>
 	<?php regform('<button class="continue">Jatka</button> <button class="secondary">Peruuta</button>',TRUE); ?>
 <?php elseif($phase == 3): ?>
 	<?php if($_GET['pw'] == 'yes'): ?>
@@ -46,7 +50,7 @@
 		<p>Sähköpostiosoitteesi on nyt vahvistettu ja PartioID-tilisi luonti on valmis. Kiitos rekisteröitymisestäsi!</p>
 		<br><button>Jatka palveluun Purkki</button>
 	<?php elseif($_GET['regok'] == 'earlier'): ?>
-		<p>Vahvistit sähköpostiosoitteesi jo aiemmin, joten PartioID-tilisi luonti on valmis. Kiitos rekisteröitymisestäsi!</p>
+		<p>Olit jo vahvistanut sähköpostiosoitteesi jo aiemmin, joten PartioID-tilisi luonti on valmis. Kiitos rekisteröitymisestäsi!</p>
 		<br><button>Jatka palveluun Purkki</button>
 	<?php else: ?>
 		<p>
