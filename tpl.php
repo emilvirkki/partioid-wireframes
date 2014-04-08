@@ -3,7 +3,7 @@
 function head($title = 'PartioID') {
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 	<head>
 		<meta charset="utf-8">
 		<title><?php print $title; ?></title>
@@ -11,26 +11,37 @@ function head($title = 'PartioID') {
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<div id="portalbar"></div>
-		<div id="lang"><strong>Suomeksi</strong> | <a href="#">På Svenska</a> | <a href="#">In English</a></div>
-		<div id="nav">
-			<div id="inner">
-				<div class="item login"><a href="login.php">Kirjaudu</a></div>
-				<div class="item register"><a href="register.php?phase=1">Rekisteröidy</a></div>
-				<div class="item about"><a href="about.php">Mikä on PartioID?</a></div>
-			</div>
-		</div>
+		<div id="skiplink"><a href="#nav">Siirry valikkoon</a></div>
 
-		<div id="main">
+		<main id="main" role="main">
+			<div class="inner">
 <?php
 }
 
 function foot() {
 ?>
-		</div>
-		<div id="footer">
+			</div>
+		</main>
+		
+		<nav id="lang">
+			<h1 class="content-label">Kielivalinta</h1>
+			<strong>Suomeksi</strong> | <a href="#">På Svenska</a> | <a href="#">In English</a>
+		</nav>
+		<nav id="nav">
+			<ul>
+				<li class="login"><a href="login.php">Kirjaudu</a></li>
+				<li class="register"><a href="register.php?phase=1">Rekisteröidy</a></li>
+				<li class="about"><a href="about.php">Mikä on PartioID?</a></li>
+			</ul>
+		</nav>
+		<footer id="footer">
 			Copyright © 2013-2014 Suomen Partiolaiset - Finlands Scouter ry<br>
 			<a href="#">Käyttöehdot</a> | <a href="#">Rekisteriseloste</a>
+		</footer>
+		<div id="portalbar">
+			<div class="inner">
+				<img src="gfx/partio-logo.png" alt="Partio - Scout">
+			</div>
 		</div>
 		<script src="jquery.js"></script>
 		<script>
@@ -47,17 +58,21 @@ function regform($buttons = '', $show_checkbox = FALSE) {
 ?>
 <form class="regform">
 <div class="row">
+<div class="field text">
 <label for="memberid">Jäsennumero:</label>
 <input type="number" id="memberid" size="10">
+</div>
 <div class="form-help-pw"><small>Löydät tämän jäsenkortista tai jäsenmaksulaskusta</small></div>
 </div>
 <div class="row">
+<div class="field text">
 <label for="mail">Sähköpostiosoite:</label>
 <input type="email" id="mail" size="30">
+</div>
 <div class="form-help-pw"><small>Oltava sama kuin jäsenrekisterissä</small></div>
 </div>
 <?php if($show_checkbox): ?>
-	<div class="cbc">
+	<div class="approve-terms">
 	<input type="checkbox" class="cb"> Hyväksyn palvelun <a href="#">käyttöehdot</a> ja olen tietoinen <a href="">rekisteriselosteesta</a>.
 	</div>
 <?php endif; ?>

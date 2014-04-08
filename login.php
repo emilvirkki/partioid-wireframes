@@ -7,13 +7,13 @@
 	}
 ?>
 
-<div id="login-left">
+<section id="login-external">
 	<h1>Kirjaudu sisään PartioID-tunnukseesi liitetyllä tilillä</h1>
-	<div id="facebook" class="ext-svc"><a href="testipalvelu.php?loggedin=yes">Facebook-kirjautuminen</a></div>
-	<div id="google" class="ext-svc"><a href="testipalvelu.php?loggedin=yes">Google-kirjautuminen</a></div>
-</div>
+	<a id="facebook" class="ext-svc" href="testipalvelu.php?loggedin=yes">Facebook-kirjautuminen</a>
+	<a id="google" class="ext-svc" href="testipalvelu.php?loggedin=yes">Google-kirjautuminen</a>
+</section>
 
-<div id="login-right">
+<section id="login-password">
 	<h1>Kirjaudu PartioID-tunnuksesi käyttäjätunnuksella ja salasanalla</h1>
 	<form action="testipalvelu.php">
 		<input type="hidden" name="loggedin" value="yes">
@@ -30,10 +30,10 @@
 		<button>Kirjaudu</button>
 		</div>
 	</form>
-</div>
+</section>
 
-<div id="login-cancel">
-	<span class="cancel-text">Eikö sinulla vielä ole PartioID:tä?</span> <a href="register.php?phase=1" class="button">Rekisteröidy</a>
-</div>
+<section id="login-register">
+	<span class="register-text">Eikö sinulla vielä ole PartioID:tä?</span> <a href="register.php?phase=1" class="button">Rekisteröidy</a>
+</section>
 
 <?php foot(); ?>

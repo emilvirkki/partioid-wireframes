@@ -6,11 +6,11 @@
 
 <!-- Järjestys: 1 - 2 - 3 -->
 
-<div id="phases">
-<div class="phase phase-1 active-<?php print $phase; ?>"><span class="num">1</span> Täytä jäsentietosi</div>
-<div class="phase phase-3 active-<?php print $phase; ?>"><span class="num">2</span> Valitse kirjautumistapa</div>
-<div class="phase phase-2 active-<?php print $phase; ?>"><span class="num">3</span> Vahvista sähköpostiosoitteesi</div>
-</div>
+<ol id="phases">
+<li class="phase phase-1 active-<?php print $phase; ?>">Täytä jäsentietosi</li>
+<li class="phase phase-3 active-<?php print $phase; ?>">Valitse kirjautumistapa</li>
+<li class="phase phase-2 active-<?php print $phase; ?>">Vahvista sähköpostiosoitteesi</li>
+</ol>
 
 <?php if($phase == 1): ?>
 	<p>
